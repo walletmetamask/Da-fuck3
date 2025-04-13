@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transaction Confirmation - Bank Of America</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="mobile-container">
+    <!-- Header -->
+    <header class="boa-header">
+      <div class="logo">
+        <div class="logo-text">Bank Of America</div>
+        <div class="logo-icon">
+          <i class="fas fa-flag"></i>
+        </div>
+      </div>
+      <div class="profile-icon">
+        <i class="fas fa-user"></i>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="boa-content">
+      <!-- Confirmation Banner -->
+      <section class="confirmation-banner">
+        <div class="banner-title">Transaction Confirmation</div>
+        <div class="banner-subtitle">Your transaction has been processed</div>
+      </section>
+
+      <!-- Confirmation Content -->
+      <section class="confirmation-content">
+        <div class="success-icon">
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="confirmation-title">Money Sent Successfully</div>
+        <div class="confirmation-message">The recipient will be notified about this transaction.</div>
+        
+        <div class="transaction-details">
+          <div class="detail-row">
+            <div class="detail-label">Transaction ID</div>
+            <div class="detail-value" id="transaction-id">TX-12345</div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-label">Date & Time</div>
+            <div class="detail-value" id="transaction-date">July 2, 2024 14:30:45</div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-label">Recipient</div>
+            <div class="detail-value" id="recipient-value">Account #: 0000000000</div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-label">Amount</div>
+            <div class="detail-value" id="transaction-amount">$100.00</div>
+          </div>
+          <div class="detail-row" id="note-row">
+            <div class="detail-label">Note</div>
+            <div class="detail-value" id="transaction-note">Thank you for the coffee!</div>
+          </div>
+        </div>
+        
+        <div class="action-buttons">
+          <button class="primary-btn" id="home-btn">Return to Home</button>
+          <button class="secondary-btn" id="new-transaction-btn">Make Another Transaction</button>
+        </div>
+        
+        <div class="countdown">
+          Redirecting to home in <span id="countdown">5</span> seconds...
+        </div>
+      </section>
+    </main>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+      <div class="nav-item">
+        <i class="fas fa-credit-card"></i>
+        <div class="nav-text">Accounts</div>
+      </div>
+      <div class="nav-item active">
+        <i class="fas fa-exchange-alt"></i>
+        <div class="nav-text">Pay & Transfer</div>
+      </div>
+      <div class="nav-item">
+        <i class="fas fa-chart-line"></i>
+        <div class="nav-text">Plan & Track</div>
+      </div>
+      <div class="nav-item">
+        <i class="fas fa-chart-bar"></i>
+        <div class="nav-text">Investment</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/confirmation.js"></script>
+</body>
+</html>

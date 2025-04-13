@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In - Bank Of America</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="mobile-container">
+    <!-- Header -->
+    <header class="boa-header">
+      <div class="logo">
+        <div class="logo-text">Bank Of America</div>
+        <div class="logo-icon">
+          <i class="fas fa-flag"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Login Form -->
+      <section class="login-form">
+        <h1 class="form-title">Sign In</h1>
+        
+        <div class="error-message" id="error-message"></div>
+        
+        <form id="login-form">
+          <div class="form-group">
+            <label class="form-label" for="email">Online ID</label>
+            <input type="email" class="form-input" id="email" placeholder="Enter your email" required>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label" for="password">Password</label>
+            <input type="password" class="form-input" id="password" placeholder="Enter your password" required>
+          </div>
+          
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="remember">
+            <label class="form-check-label" for="remember">Save this Online ID</label>
+          </div>
+          
+          <button type="submit" class="form-button" id="login-btn">Sign In</button>
+          
+          <a href="#" class="form-link">Forgot Online ID or Password?</a>
+          <a href="signup.html" class="form-link">Enroll in Online Banking</a>
+        </form>
+      </section>
+      
+      <!-- Footer -->
+      <footer class="boa-footer">
+        <div class="footer-text">For your security, please sign out when you're done.</div>
+        
+        <div class="footer-links">
+          <a href="#" class="footer-link">Privacy</a>
+          <a href="#" class="footer-link">Security</a>
+          <a href="#" class="footer-link">Terms of Use</a>
+        </div>
+        
+        <div class="copyright">© 2024 Bank Of America. All rights reserved.</div>
+      </footer>
+    </main>
+  </div>
+
+  <script src="js/login.js"></script>
+</body>
+</html>

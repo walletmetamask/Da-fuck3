@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transaction History - Bank Of America</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="mobile-container">
+    <!-- Header -->
+    <header class="boa-header">
+      <div class="logo">
+        <div class="logo-text">Bank Of America</div>
+        <div class="logo-icon">
+          <i class="fas fa-flag"></i>
+        </div>
+      </div>
+      <div class="profile-icon" id="profile-btn">
+        <i class="fas fa-user"></i>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="boa-content">
+      <!-- Transactions Banner -->
+      <section class="transactions-banner">
+        <div class="banner-title">Transaction History</div>
+        <div class="banner-subtitle">View all your account transactions</div>
+      </section>
+
+      <!-- Transactions Content -->
+      <section class="transactions-content">
+        <div class="filter-section">
+          <label class="filter-label">Filter Transactions</label>
+          <select class="filter-select" id="transaction-filter">
+            <option value="all">All Transactions</option>
+            <option value="credit">Money Received</option>
+            <option value="debit">Money Sent</option>
+          </select>
+        </div>
+        
+        <div class="transactions-list" id="transactions-list">
+          <div class="no-transactions" id="no-transactions">
+            No transactions found
+          </div>
+          <!-- Transactions will be loaded here -->
+        </div>
+      </section>
+    </main>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+      <div class="nav-item" id="nav-accounts">
+        <i class="fas fa-credit-card"></i>
+        <div class="nav-text">Accounts</div>
+      </div>
+      <div class="nav-item active" id="nav-pay">
+        <i class="fas fa-exchange-alt"></i>
+        <div class="nav-text">Pay & Transfer</div>
+      </div>
+      <div class="nav-item" id="nav-plan">
+        <i class="fas fa-chart-line"></i>
+        <div class="nav-text">Plan & Track</div>
+      </div>
+      <div class="nav-item" id="nav-investment">
+        <i class="fas fa-chart-bar"></i>
+        <div class="nav-text">Investment</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/transactions.js"></script>
+</body>
+</html>
