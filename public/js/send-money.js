@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       // Check if transaction code is correct (for demo purposes, we'll use a fixed code)
-      if (transactionCodeInput.value !== "45242769012") {
+      if (transactionCodeInput.value !== "123678") {
         modalErrorMessage.textContent = "Invalid transaction code. Please try again."
         modalErrorMessage.style.display = "block"
         return
